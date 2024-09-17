@@ -81,6 +81,20 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+-React JS is a library that allows the creation of a virtual dom. it allows for state to be changed and to render those changes within the virtual dom.
+-An example would be painting a fence. If you wanted to make a small change to the design e.g. say one picket of the fence needs to be pink instead of white, before React you would need to repaint the entire fence and make the change once you got to the pink picket. React allows us to just edit the one picket.
+
+2. Describe component state.
+
+- Javascript object that holds informatoin within the component that influences the output of the render.
+
+3. Describe props.
+
+- Javascript object that gets passed to the component and holds information that influences the output of the render. 
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+- A side effect is anything that affects something outside the scope of the function being executed. Fetching data from an API, timers, logging, and manually manipulating the DOM are all examples of side effects. There are two categories of side effects in React components - those that don't require cleanup and those that do require cleanup. 
+
+-By adding a dependency array you can set your effect to render when the dependency changes.
